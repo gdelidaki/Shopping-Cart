@@ -12,7 +12,7 @@ let cartLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
 function App() {
   //useState is initialized with items from local storage & survives browser refreshes
   const [basketItems, setBasketItems] = useState(cartLocalStorage);
-  const [sum, setSum] = useState([]);
+  const [sum, setSum] = useState({});
 
   //Total price
   const itemsPrice = basketItems.reduce((total, current) => {
