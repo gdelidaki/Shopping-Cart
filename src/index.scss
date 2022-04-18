@@ -1,0 +1,111 @@
+$border-rad: 4px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  transition: 0.3s all ease-in-out;
+  border-radius: $border-rad;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+  button.addRemove {
+  margin: 5px 8px 0 0;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 1rem auto;
+  background-color:white;
+  border: 1px solid black;
+  border-radius: $border-rad;
+  padding: 15px;
+}
+
+.products-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.product-container {
+  background-color: #ffd700;
+  border-radius: $border-rad;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.discStyle {
+  background-color: #ffd700;
+  width: 310px;
+}
+
+.button-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+}
+
+button.clearAndBuy {
+  border-radius: $border-rad;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  transition: 0.3s all ease-in-out;;
+
+  &:hover {
+    background-color: #eeeee4;
+    color: #000;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .container {
+    max-width: 500px;
+  }
+}
+
+
+
+
