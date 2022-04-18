@@ -1,3 +1,16 @@
+# Shopping Cart in React
+
+See it online: https://unrivaled-marigold-a0f216.netlify.app/
+
+Personal Project built from a user story:
+-User can add or remove items into their basket
+-Basket allows quantity changes
+-Basket display total price
+-When total price exceeds €100, 10% discount is applied and user is notified
+-Basket survives browser refreshes
+-User can clear cart
+-Console logs basket items and total price in XML when buy is clicked
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
